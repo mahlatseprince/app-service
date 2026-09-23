@@ -1,7 +1,36 @@
 @page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Sign in | .NET 💜 Azure</PageTitle>
 
-<h1>.NET 💜 Azure</h1>
+<main class="min-vh-100 d-flex align-items-center justify-content-center bg-dark py-5">
+	<div class="card bg-body-tertiary shadow-sm border-0" style="max-width: 420px; width: 100%;">
+		<div class="card-body p-4 p-md-5">
+			<div class="text-center mb-4">
+				<h1 class="h3 mb-2">.NET 💜 Azure</h1>
+				<p class="text-body-secondary mb-0">Sign in to your account</p>
+			</div>
 
-Example .NET app to Azure App Service.
+			<form>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email address</label>
+					<input id="email" type="email" class="form-control" autocomplete="email" required />
+				</div>
+
+				<div class="mb-3">
+					<label for="password" class="form-label">Password</label>
+					<input id="password" type="password" class="form-control" autocomplete="current-password" required />
+				</div>
+
+				<div class="d-flex justify-content-between align-items-center mb-4">
+					<div class="form-check">
+						<input id="remember-me" type="checkbox" class="form-check-input" />
+						<label for="remember-me" class="form-check-label">Remember me</label>
+					</div>
+					<a href="#" class="link-primary text-decoration-none">Forgot password?</a>
+				</div>
+
+				<button type="submit" class="btn btn-primary w-100">Sign in</button>
+			</form>
+		</div>
+	</div>
+</main>
